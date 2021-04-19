@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		582AD331262DB15700B96181 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582AD330262DB15700B96181 /* AppDelegate.swift */; };
 		582AD333262DB15700B96181 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582AD332262DB15700B96181 /* SceneDelegate.swift */; };
-		582AD335262DB15700B96181 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582AD334262DB15700B96181 /* ViewController.swift */; };
+		582AD335262DB15700B96181 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582AD334262DB15700B96181 /* ExploreViewController.swift */; };
 		582AD338262DB15700B96181 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 582AD336262DB15700B96181 /* Main.storyboard */; };
 		582AD33B262DB15700B96181 /* LetsEat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 582AD339262DB15700B96181 /* LetsEat.xcdatamodeld */; };
 		582AD33D262DB15A00B96181 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 582AD33C262DB15A00B96181 /* Assets.xcassets */; };
@@ -39,7 +39,7 @@
 		582AD32D262DB15700B96181 /* LetsEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsEat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		582AD330262DB15700B96181 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		582AD332262DB15700B96181 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		582AD334262DB15700B96181 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		582AD334262DB15700B96181 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		582AD337262DB15700B96181 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		582AD33A262DB15700B96181 /* LetsEat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LetsEat.xcdatamodel; sourceTree = "<group>"; };
 		582AD33C262DB15A00B96181 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -101,9 +101,9 @@
 		582AD32F262DB15700B96181 /* LetsEat */ = {
 			isa = PBXGroup;
 			children = (
+				582AD369262DFB2100B96181 /* Explore */,
 				582AD330262DB15700B96181 /* AppDelegate.swift */,
 				582AD332262DB15700B96181 /* SceneDelegate.swift */,
-				582AD334262DB15700B96181 /* ViewController.swift */,
 				582AD336262DB15700B96181 /* Main.storyboard */,
 				582AD33C262DB15A00B96181 /* Assets.xcassets */,
 				582AD33E262DB15A00B96181 /* LaunchScreen.storyboard */,
@@ -129,6 +129,14 @@
 				582AD357262DB15A00B96181 /* Info.plist */,
 			);
 			path = LetsEatUITests;
+			sourceTree = "<group>";
+		};
+		582AD369262DFB2100B96181 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				582AD334262DB15700B96181 /* ExploreViewController.swift */,
+			);
+			path = Explore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,7 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				582AD335262DB15700B96181 /* ViewController.swift in Sources */,
+				582AD335262DB15700B96181 /* ExploreViewController.swift in Sources */,
 				582AD331262DB15700B96181 /* AppDelegate.swift in Sources */,
 				582AD33B262DB15700B96181 /* LetsEat.xcdatamodeld in Sources */,
 				582AD333262DB15700B96181 /* SceneDelegate.swift in Sources */,
