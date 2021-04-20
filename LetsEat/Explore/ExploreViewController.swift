@@ -18,7 +18,7 @@ class ExploreViewController: UIViewController, UICollectionViewDataSource, UICol
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-         20
+         100
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
@@ -31,6 +31,9 @@ class ExploreViewController: UIViewController, UICollectionViewDataSource, UICol
                                "exploreCell", for: indexPath)
                     return cell
     }
+    
+    @IBAction func unwindLocationCancel(segue:UIStoryboardSegue){
+                }
 
 
 }
