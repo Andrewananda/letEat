@@ -16,6 +16,7 @@
 		582AD340262DB15A00B96181 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 582AD33E262DB15A00B96181 /* LaunchScreen.storyboard */; };
 		582AD34B262DB15A00B96181 /* LetsEatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582AD34A262DB15A00B96181 /* LetsEatTests.swift */; };
 		582AD356262DB15A00B96181 /* LetsEatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582AD355262DB15A00B96181 /* LetsEatUITests.swift */; };
+		58665F0C262EC18F008489C2 /* RestaurantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58665F0B262EC18F008489C2 /* RestaurantListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		582AD351262DB15A00B96181 /* LetsEatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetsEatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		582AD355262DB15A00B96181 /* LetsEatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsEatUITests.swift; sourceTree = "<group>"; };
 		582AD357262DB15A00B96181 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58665F0B262EC18F008489C2 /* RestaurantListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		582AD32F262DB15700B96181 /* LetsEat */ = {
 			isa = PBXGroup;
 			children = (
+				58665F0A262EC169008489C2 /* Restaurants */,
 				582AD369262DFB2100B96181 /* Explore */,
 				582AD330262DB15700B96181 /* AppDelegate.swift */,
 				582AD332262DB15700B96181 /* SceneDelegate.swift */,
@@ -137,6 +140,14 @@
 				582AD334262DB15700B96181 /* ExploreViewController.swift */,
 			);
 			path = Explore;
+			sourceTree = "<group>";
+		};
+		58665F0A262EC169008489C2 /* Restaurants */ = {
+			isa = PBXGroup;
+			children = (
+				58665F0B262EC18F008489C2 /* RestaurantListViewController.swift */,
+			);
+			path = Restaurants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +282,7 @@
 			files = (
 				582AD335262DB15700B96181 /* ExploreViewController.swift in Sources */,
 				582AD331262DB15700B96181 /* AppDelegate.swift in Sources */,
+				58665F0C262EC18F008489C2 /* RestaurantListViewController.swift in Sources */,
 				582AD33B262DB15700B96181 /* LetsEat.xcdatamodeld in Sources */,
 				582AD333262DB15700B96181 /* SceneDelegate.swift in Sources */,
 			);
