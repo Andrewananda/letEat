@@ -9,14 +9,14 @@ import UIKit
 
 class LocationViewController: UIViewController, UITableViewDataSource {
     
-    @IBOutlet weak var tableView: UITableView! 
+    @IBOutlet weak var tableView: UITableView!
     
     let manager = LocationDataManager()
     
      override func viewDidLoad() {
         super.viewDidLoad()
         manager.fetch()
-    }
+    } 
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return manager.numberOfItems()
