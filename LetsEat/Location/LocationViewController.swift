@@ -9,7 +9,7 @@ import UIKit
 
 class LocationViewController: UIViewController, UITableViewDataSource {
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView! 
     
     let manager = LocationDataManager()
     
