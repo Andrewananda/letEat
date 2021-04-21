@@ -9,16 +9,18 @@ import UIKit
 
 class ExploreViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
+    let manager = ExploreDataManager()
 
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        manager.fetch()
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-         100
+        return manager.numberOfItems()
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
@@ -28,8 +30,11 @@ class ExploreViewController: UIViewController, UICollectionViewDataSource, UICol
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier:
-                               "exploreCell", for: indexPath)
-                    return cell
+                               "exploreCell", for: indexPath) as! ExploreCell
+        let item = manager.explore(at: indexPath)
+        cell.lblname.text = item.name
+        cell.imgExplore.image = UIImage(named: item.image)
+        return cell
     }
     
     @IBAction func unwindLocationCancel(segue:UIStoryboardSegue){
