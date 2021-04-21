@@ -22,6 +22,9 @@
 		586E4166262FF47A0000422E /* ExploreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586E4165262FF47A0000422E /* ExploreDataManager.swift */; };
 		586E416D262FFF8D0000422E /* ExploreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586E416B262FFF8D0000422E /* ExploreCell.swift */; };
 		586E416E262FFF8D0000422E /* ExploreCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 586E416C262FFF8D0000422E /* ExploreCellCollectionViewCell.xib */; };
+		586E417C26301CE50000422E /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586E417B26301CE50000422E /* LocationViewController.swift */; };
+		586E418A263023390000422E /* Locations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 586E4189263023390000422E /* Locations.plist */; };
+		586E418F263029EB0000422E /* LocationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586E418E263029EB0000422E /* LocationDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,9 @@
 		586E4165262FF47A0000422E /* ExploreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreDataManager.swift; sourceTree = "<group>"; };
 		586E416B262FFF8D0000422E /* ExploreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCell.swift; sourceTree = "<group>"; };
 		586E416C262FFF8D0000422E /* ExploreCellCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExploreCellCollectionViewCell.xib; sourceTree = "<group>"; };
+		586E417B26301CE50000422E /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		586E4189263023390000422E /* Locations.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Locations.plist; sourceTree = "<group>"; };
+		586E418E263029EB0000422E /* LocationDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +119,7 @@
 		582AD32F262DB15700B96181 /* LetsEat */ = {
 			isa = PBXGroup;
 			children = (
+				586E417826301C980000422E /* Location */,
 				58665F0A262EC169008489C2 /* Restaurants */,
 				582AD369262DFB2100B96181 /* Explore */,
 				582AD330262DB15700B96181 /* AppDelegate.swift */,
@@ -179,6 +186,32 @@
 				586E416C262FFF8D0000422E /* ExploreCellCollectionViewCell.xib */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		586E417826301C980000422E /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				586E417A26301CAC0000422E /* Model */,
+				586E417926301CA80000422E /* View */,
+				586E417B26301CE50000422E /* LocationViewController.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		586E417926301CA80000422E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		586E417A26301CAC0000422E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				586E4189263023390000422E /* Locations.plist */,
+				586E418E263029EB0000422E /* LocationDataManager.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +320,7 @@
 				586E415C262FEEEA0000422E /* ExploreData.plist in Resources */,
 				582AD340262DB15A00B96181 /* LaunchScreen.storyboard in Resources */,
 				586E416E262FFF8D0000422E /* ExploreCellCollectionViewCell.xib in Resources */,
+				586E418A263023390000422E /* Locations.plist in Resources */,
 				582AD33D262DB15A00B96181 /* Assets.xcassets in Resources */,
 				582AD338262DB15700B96181 /* Main.storyboard in Resources */,
 			);
@@ -317,8 +351,10 @@
 				582AD331262DB15700B96181 /* AppDelegate.swift in Sources */,
 				586E4161262FEFA60000422E /* ExploreItem.swift in Sources */,
 				58665F0C262EC18F008489C2 /* RestaurantListViewController.swift in Sources */,
+				586E418F263029EB0000422E /* LocationDataManager.swift in Sources */,
 				586E416D262FFF8D0000422E /* ExploreCell.swift in Sources */,
 				586E4166262FF47A0000422E /* ExploreDataManager.swift in Sources */,
+				586E417C26301CE50000422E /* LocationViewController.swift in Sources */,
 				582AD33B262DB15700B96181 /* LetsEat.xcdatamodeld in Sources */,
 				582AD333262DB15700B96181 /* SceneDelegate.swift in Sources */,
 			);
