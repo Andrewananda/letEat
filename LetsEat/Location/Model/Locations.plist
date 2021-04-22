@@ -16,12 +16,6 @@
 	</dict>
 	<dict>
 		<key>city</key>
-		<string>Eldoret</string>
-		<key>state</key>
-		<string>Eld</string>
-	</dict>
-	<dict>
-		<key>city</key>
 		<string>Chicago</string>
 		<key>state</key>
 		<string>IL</string>

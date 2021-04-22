@@ -16,7 +16,7 @@ class LocationViewController: UIViewController, UITableViewDataSource {
      override func viewDidLoad() {
         super.viewDidLoad()
         manager.fetch()
-    } 
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return manager.numberOfItems()

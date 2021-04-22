@@ -24,6 +24,7 @@ class LocationDataManager {
         return locations.count
     }
     
+    
     func locationItem(at index: IndexPath) -> String{
         return locations[index.item]
     }
